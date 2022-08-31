@@ -42,7 +42,7 @@ const { demoLogger } = require('./app/middlewares');
 app.use(demoLogger);
 
 // simple route
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Welcome to our API application server." });
 });
 
