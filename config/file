@@ -1,0 +1,5 @@
+private key 'ce863126-50b6-4578-b74f-e72f518a2250'
+public  key  'khsjxtjl'
+realm-cli login --api-key khsjxtjl --private-api-key ce863126-50b6-4578-b74f-e72f518a2250
+
+localhost server address http://localhost:8081/home

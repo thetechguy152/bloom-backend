@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "bloom_app_backend": "file:.."
+  }
+}
