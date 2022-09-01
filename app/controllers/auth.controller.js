@@ -17,17 +17,15 @@ const formatErrors = (msg, errors) => {
 
 /**
  * sign up user
- *
+ *name, email, mobile, password
  * @param req
  * @param res
  */
 exports.signup = (req, res) => {
   const user = new User({
-    username: req.body.username,
     email: req.body.email,
-    first_name: req.body.first_name,
-    last_name: req.body.last_name,
-    phone: req.body.phone,
+    name: req.body.name,
+    mobile: req.body.mobile,
     gender: req.body.gender,
     password: bcrypt.hashSync(req.body.password, 8)
   });
