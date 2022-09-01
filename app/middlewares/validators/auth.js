@@ -10,7 +10,7 @@ const { validationConfig, formatValidationErrors } = require("../../../config/va
  */
 const signIn = (req, res, next) => {
   const validationRule = {
-    "username": "required|string|max:255",
+    "email": "required|string|max:255",
     "password": "required|string|min:4|max:255",
   }
   validator(req.body, validationRule, {}, (err, status) => {
@@ -32,10 +32,7 @@ const signIn = (req, res, next) => {
 const signup = (req, res, next) => {
   const validationRule = {
     "email": "required|email|max:255|unique:User,email",
-    "username": "required|string|max:255|unique:User,username",
-    "first_name": "required|string|max:255",
-    "last_name": "required|string|max:255",
-    "nickname": "nullable|string|max:20",
+    "name": "required|string|max:255",
     "phone": "required|string|max:20",
     "password": "required|string|min:4|confirmed",
     "gender": "string|max:6"

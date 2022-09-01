@@ -1,10 +1,11 @@
 module.exports = (mongoose, mongoosePaginate) => {
   var schema = mongoose.Schema(
     {
-      username: {type: String, unique: true, required: true },
-      email: {type: String, unique: true, required: true },
+      name: {type: String, unique: true, required: true },
+      email: { type: String, unique: true, required: true },
+      phone: {type: String, unique: true, required: true },
+      gender: {type: String, unique: true, required: true },
       password: {type: String, required: true },
-      fullName: String, 
       roles: [
         {
           type: mongoose.Schema.Types.ObjectId,

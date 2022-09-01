@@ -10,15 +10,11 @@ const { validationConfig, formatValidationErrors } = require("../../../config/va
  */
 const usersCreate = (req, res, next) => {
   const validationRule = {
-    "username": "required|string|max:255|unique:User,username",
     "email": "required|string|email|max:255|unique:User,email",
-    "first_name": "required|string|max:255",
-    "last_name": "required|string|max:255",
-    "nickname": "nullable|string|max:255",
+    "name": "required|string|max:255",
     "password": "required|string|max:255|min:4|confirmed",
     "gender": "required|string|max:6",
     "phone": "required|string|max:20",
-    "roles": "required",
   }
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
