@@ -4,8 +4,8 @@
   "description": "backend of bloom app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":  "nodemon ./server.js",
-    "server": "nodemon ./server.js"
+    "start":  "node ./server.js",
+    "server": "node ./server.js"
   },
   "keywords": [
     "example",
