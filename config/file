@@ -2,4 +2,20 @@ private key 'ce863126-50b6-4578-b74f-e72f518a2250'
 public  key  'khsjxtjl'
 realm-cli login --api-key khsjxtjl --private-api-key ce863126-50b6-4578-b74f-e72f518a2250
 
-localhost server address http://localhost:8081/home
+localhost server address home http://localhost:8081/home
+
+localhost server address  http://localhost:8081/
+localhost server address by ip 129.205.124.150:8081/home
+ 
+ signup server       /api/auth/signup
+ signin server       /api/auth/signin
+
+ same data{
+    {"_id":{"$oid":"630fdb7d9c9306f5514e4580"},
+    "username":"thetechguy152",
+    "email":"hectorezinwoke@yahoo.com",
+    "password":"$2a$08$X.j.QtHQKW/.Wt/8Mq6PIOkcuCLpaa41iAJ7ZZ0MzwGLgRwPHx/hy",
+    "roles":[{"$oid":"6306c0c1db83ee65f5b79fc9"}],
+    "createdAt":{"$date":{"$numberLong":"1661983613100"}},
+    "updatedAt":{"$date":{"$numberLong":"1661983613565"}},"__v":{"$numberInt":"1"}}
+ }

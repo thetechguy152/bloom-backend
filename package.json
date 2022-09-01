@@ -7,6 +7,10 @@
     "start":  "nodemon ./server.js",
     "server": "nodemon ./server.js"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "bloomed tech",
   "license": "MIT",
   "private": true,
@@ -27,5 +31,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
+  },
+  "engines": {
+     "node": "16.15.0"
   }
 }
