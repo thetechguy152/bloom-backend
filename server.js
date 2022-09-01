@@ -43,7 +43,7 @@ app.use(demoLogger);
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to our API application server." });
+  res.json({ message: "Welcome to Bloomed Tech API application backend server." });
 });
 
 /**
